@@ -5,11 +5,186 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <!-- ===CSS === -->
     <link rel="stylesheet" href="./assets/styles.css">
+    <!-- ===Fontawesome === -->
+    <script src="https://kit.fontawesome.com/bd2030fcee.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+    <header>
+        <div class="logo">
+            <a href="#">Ayesha Siddiqa</a>
+        </div>
+        <div class="hamburger">
+            <i class="fa-solid fa-bars"></i>
+        </div>
 
+        <nav class="nav-container">
+            <div class="nav-bar">
+                <a href="">Home</a>
+                <a href="#project-link">Projects</a>
+                <a href="#skill-link">Skills</a>
+                <a href="#contact-form">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- === About Section === -->
+
+    <div class="about-container">
+        <div class="main-content">
+            <h2 class="main-title">Ayesha Siddiqa</h2>
+            <p class="main-text">
+                I am passionate about Software Development and currently enrolled in a Digital Skills
+                Boot camp - Software Development at JustIT and actively pursuing an entry into the tech industry.
+                I bring excellent background and professional exposure from banking industry,
+                keep client service ability and logical responsive working style.
+                I have a keen interest in continually learn and improve my skills in the field of Software Development.
+            </p>
+        </div>
+        <iframe class="video" width="800" height="200" src="https://youtu.be/VjL79Awn3QQ?si=aIMV0zjEAZrkShcs">
+        </iframe>
+    </div>
+
+
+
+    <!-- === Skill Section === -->
+
+    <div class="skill-section" id="skill-link">
+        <h2>My Tech Skills</h2>
+        <p class="skill-level">JustIT has given me good foundation of the following technologies. And gave me confidence
+            to work with these
+            technologies as a junior developr.</p>
+        <div class="skills-container">
+            <div class="skills">
+                <div class="skill">
+                    <i class="fa-brands fa-html5"></i>
+                </div>
+                <div class="skill">
+                    <i class="fa-brands fa-css3-alt"></i>
+                </div>
+                <div class="skill">
+                    <i class="fa-brands fa-js"></i>
+                </div>
+                <div class="skill">
+                    <i class="fa-brands fa-python"></i>
+                </div>
+                <div class="skill">
+                    <i class="fa-solid fa-database"></i>
+                </div>
+                <div class="skill">
+                    <i class="fa-brands fa-git"></i>
+                </div>
+                <div class="skill">
+                    <i class="fa-brands fa-square-github"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- === Project Section === -->
+
+    <div class="project-container" id="project-link">
+        <h2>My<span> Projects</span></h2>
+        <div class="projects">
+            <div class="project">
+                <div class="image-container">
+                    <img class="image" src="./assets/images/grocery-list.png" alt="">
+                </div>
+                <div class="hover-items">
+                    <div class="icons">
+                        <h3>My Grocery List</h3>
+                        <p>Technologies used: HTML, CSS & JS.</p>
+                        <div class="project-link">
+                            <a class="source-code" href="https://github.com/ashisohail/grocery-list"
+                                target="_blank">Source
+                                Code</a>
+                            <a class="live-site" href="https://ashisohail.github.io/grocery-list/" target="_blank">Live
+                                Site</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <div class="image-container">
+                    <img class="image" src="./assets/images/calculator.png" alt="">
+                </div>
+                <div class="hover-items">
+                    <div class="icons">
+                        <h3>Calculator</h3>
+                        <p>Technologies used: HTML, CSS & JS.</p>
+                        <div class="project-link">
+                            <a class="source-code" href="https://github.com/ashisohail/calculator"
+                                target="_blank">Source
+                                Code</a>
+                            <a class="live-site" href="https://ashisohail.github.io/calculator/" target="_blank">Live
+                                Site</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <div class="image-container">
+                    <img class="image" src="./assets/images/E.commerce-store.png" alt="">
+                </div>
+                <div class="hover-items">
+
+                    <div class="icons">
+                        <h3>Online-Store</h3>
+                        <p>Technologies used: HTML & Tailwindcss.</p>
+                        <div class="project-link">
+                            <a class="source-code" href="https://github.com/ashisohail/redischool-finalproject"
+                                target="_blank">Source
+                                Code</a>
+                            <a class="live-site" href="https://ashisohail.github.io/redischool-finalproject/"
+                                target="_blank">Live
+                                Site</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===Contact Form === -->
+
+    <div class="contact-container" id="contact-form">
+        <h2>Contact Me</h2>
+        <form method="POST" onsubmit="sendMail(event)">
+
+            <div class="input-container">
+                <span class="required-field"></span>
+                <input type="text" id="name" name="name" autocomplete="on" placeholder="Name" required>
+            </div>
+
+            <div class="input-container">
+                <span class="required-field"></span>
+                <input type="email" id="email" name="email" autocomplete="on" placeholder="Email" required>
+            </div>
+
+
+            <div class="input-container">
+                <span class="required-field"></span>
+                <textarea id="message" name="message" placeholder="Message" style="height:100px" required></textarea>
+            </div>
+            <input type="submit" value="Send Message">
+        </form>
+    </div>
+
+    <!--=========== footer ===============-->
+    <footer>
+        <div class="footer-container">
+            <p>Copyright &#169; 2023 AS</p>
+        </div>
+
+        <div class="footer-items">
+            <a class="footer-item" target="_blank" href="https://www.linkedin.com/in/ayesha-siddiqa-6b46a2ab/"><i
+                    class="fa-brands fa-linkedin"></i></a>
+            <a class="footer-item" target="_blank" href="https://github.com/ashisohail"><i
+                    class="fa-brands fa-square-github"> </i></a>
+        </div>
+    </footer>
 </body>
 
 </html>
